@@ -13,4 +13,5 @@ Realestate appraisal application using K-NN and random forrest algorithms to mak
 6) Serve all static files “python manage.py collectstatic”
 7) Migrate django application “python manage.py migrate”
 8) Initialize server “python manage.py runserver”
-9) Visit “ http://127.0.0.1:8000/ ”
+9) Train the model using our data “ http://127.0.0.1:8000/appraiseaway/trainData/ “
+10) Visit “ http://127.0.0.1:8000/ ”
