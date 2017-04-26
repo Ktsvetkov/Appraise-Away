@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Appraise Away</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        {% load static from staticfiles %}
+        {% static "css/styles.css" as cssFile %}
+        <link rel="stylesheet" href="{{ cssFile }}">
+    </head>
+
+    <body>
+        {% load static from staticfiles %}
+        {% static "media/defaultHouse.png" as defaultHouse %}
+        <script>
+            var defaultHouseUrl = "{{defaultHouse}}"
+        </script>
+        {% load static from staticfiles %}
+        {% static "media/AppraiseAwayLogo.png" as mediaFile %}
+        <div id="titleBar"><img id="logo" src="{{ mediaFile }}" alt="Appraise Away"></div>
+        <div id="mainArea">
+            <div id="contentArea"></div>
+        </div>
+        {% load static from staticfiles %}
+        {% static "js/scripts.js" as jsFile %}
+        <script src="{{ jsFile }}"></script>
+        <script>
+            loadInitialForm();
+        </script>
+    </body>
+
+</html>
+

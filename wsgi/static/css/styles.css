@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    height: 70px;
+}
+
+#titleBar {
+    width: 100%;
+    -webkit-box-shadow: 0 2px 2px -1px #000000;
+   -moz-box-shadow:     0 2px 2px -1px #000000;
+        box-shadow:     0 2px 2px -1px #000000;
+}
+
+#mainArea {
+    padding: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contentArea {
+    display: inline-block;
+    background: #F3F3F3;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*height: 400px;*/
+    width: 233px;
+}
+
+#actionButton {
+    background: #fca4a4;
+    background-image: -webkit-linear-gradient(top, #fca4a4, #ff3d3d);
+    background-image: -moz-linear-gradient(top, #fca4a4, #ff3d3d);
+    background-image: -ms-linear-gradient(top, #fca4a4, #ff3d3d);
+    background-image: -o-linear-gradient(top, #fca4a4, #ff3d3d);
+    background-image: linear-gradient(to bottom, #fca4a4, #ff3d3d);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+}
+
+#attributeForm h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.propertyImage {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+
+
+
+
