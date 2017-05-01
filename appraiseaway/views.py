@@ -14,7 +14,7 @@ import numpy as np
 
 
 def getWalkScore(zipcode):
-    lat_jsonResponse = json.loads(urllib2.urlopen("https://www.zipcodeapi.com/rest/Jd53ArqkcWlc2CneAby3N2ccktlgYSUH60KHrb2D8oPa0dpAoXEc0QolkJCiCx0I/info.json/" + str(zipcode)).read())
+    lat_jsonResponse = json.loads(urllib2.urlopen("https://www.zipcodeapi.com/rest/iA6hhLmHE1b6CaSsDL4CSp1jXZBoIDj0dpiubEcQGnWjxOMbzQNsfPLdPnCx0Vxe/info.json/" + str(zipcode)).read())
     latitude = lat_jsonResponse["lat"]
     longitude = lat_jsonResponse["lng"]
     google_url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
@@ -115,7 +115,7 @@ def getNeighborsUsingKNN(attributes, k_val, MODEL_DIR):
         neigh = pickle.load(open(propertiesPath, "rb"))
         neighs.append(neigh)
 
-    k_neighbors = neighs[k_val].kneighbors(np.array(attributes), n_neighbors=k_val)[1][0]
+    k_neighbors = neighs[int(k_val) - 1].kneighbors(np.array(attributes), n_neighbors=k_val)[1][0]
     predicted_price = neighs[int(k_val) - 1].predict(np.array(attributes))
 
     return k_neighbors, predicted_price
